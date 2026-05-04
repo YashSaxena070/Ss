@@ -13,30 +13,27 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              I’m a Software Engineer passionate about building scalable, reliable applications across both frontend and backend systems. I enjoy transforming ideas into real-world products and have developed a strong interest in system design and high-performance architectures.
               <br />
               <br />
-              I’m proficient in
+              I’m work with
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  Java, SpringBoot, JavaScript, Node.js, and React.js {" "}
                 </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
+              — and have experience building microservices-based systems using tools like Kafka, Redis, and PostgreSQL. I enjoy designing event-driven systems and solving complex backend challenges.
               <br />
               <br />
-              My key areas of interest include developing
+              My key areas of interest include 
               <i>
                 <b className="purple">
                   {" "}
-                  Web Applications, Blockchain Solutions,{" "}
+                  Distributed Systems, Web Applications and clud-native development{" "}
                 </b>
               </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              and I actively explore technologies like Docker and Kubernetes to deploy and scale applications.
               <br />
               <br />
               Whenever possible, I love building projects with
