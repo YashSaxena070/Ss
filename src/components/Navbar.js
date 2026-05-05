@@ -37,71 +37,62 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
-        </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          onClick={() => {
-            updateExpanded(expand ? false : "expanded");
-          }}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
-            </Nav.Item>
+          <Navbar.Brand href="/" className="d-flex align-items-center">
+            {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
+            <span style={{ color: "white", fontSize: "1.5rem", fontWeight: "bold" }}>
+              <span style={{ color: "var(--accent-color)" }}>S</span>s.
+            </span>
+          </Navbar.Brand>
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            onClick={() => {
+              updateExpanded(expand ? false : "expanded");
+            }}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </Navbar.Toggle>
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ms-auto" defaultActiveKey="#home">
+              <Nav.Item>
+                <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                  Home
+                </Nav.Link>
+              </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
-            </Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  as={Link}
+                  to="/about"
+                  onClick={() => updateExpanded(false)}
+                >
+                  About
+                </Nav.Link>
+              </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
-              </Nav.Link>
-            </Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  as={Link}
+                  to="/project"
+                  onClick={() => updateExpanded(false)}
+                >
+                  Projects
+                </Nav.Link>
+              </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/YashSaxena070"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item>
-          </Nav>
+              <Nav.Item className="fork-btn">
+                <Button
+                  as={Link}
+                  to="/resume"
+                  className="btn-primary"
+                  onClick={() => updateExpanded(false)}
+                  style={{ marginLeft: "15px" }}
+                >
+                  Resume
+                </Button>
+              </Nav.Item>
+            </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

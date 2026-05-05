@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
@@ -22,6 +23,11 @@ function About() {
                 paddingTop: "30px",
                 paddingBottom: "50px",
               }}
+              as={motion.div}
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
             >
               <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
                 Know Who <strong className="purple">I'M</strong>
@@ -32,19 +38,34 @@ function About() {
               md={5}
               style={{ paddingTop: "120px", paddingBottom: "50px" }}
               className="about-img"
+              as={motion.div}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
             >
               <img src={laptopImg} alt="about" className="img-fluid" />
             </Col>
           </Row>
-          <h1 className="project-heading">
+          <motion.h1 
+            className="project-heading"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
             Professional <strong className="purple">Skillset </strong>
-          </h1>
+          </motion.h1>
 
           <Techstack />
 
-          <h1 className="project-heading">
+          <motion.h1 
+            className="project-heading"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
             <strong className="purple">Tools</strong> I use
-          </h1>
+          </motion.h1>
           <Toolstack />
 
           <Github />
