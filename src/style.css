@@ -105,6 +105,26 @@ html, body {
   width: 60%;
 }
 
+/* Navbar Toggler */
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-toggler span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 5px auto;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
 /* Primary Button */
 .btn-primary {
   background-color: var(--accent-color) !important;
@@ -215,6 +235,9 @@ section {
 .card-img-top {
   border-radius: 8px !important;
   margin-bottom: 1.5rem;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
 }
 
 /* Tech Icons (Services) */
@@ -318,4 +341,33 @@ section {
 
 .quote-card-view ul {
   padding-left: 20px;
+}
+
+/* Responsive Navbar Styles */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background-color: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  
+  .nav-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .fork-btn {
+    margin-top: 1rem;
+  }
+
+  .btn-primary {
+    margin-left: 0 !important;
+    width: 100%;
+  }
 }

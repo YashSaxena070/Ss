@@ -42,7 +42,7 @@ function Home() {
                 </div>
                 
                 <div style={{ paddingLeft: 0 }}>
-                  <a href="mailto:sparsh@example.com" className="btn btn-primary" style={{ padding: "12px 30px", fontSize: "1.2rem" }}>
+                  <a href="mailto:saxenayash@gmail.com" className="btn btn-primary" style={{ padding: "12px 30px", fontSize: "1.2rem" }}>
                     Contact Me ↗
                   </a>
                 </div>

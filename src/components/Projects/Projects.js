@@ -5,7 +5,7 @@ import Particle from "../Particle";
 import { motion } from "framer-motion";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
+import cryptoImg from "../../Assets/Projects/crypto.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
 function Projects() {
@@ -69,7 +69,7 @@ function Projects() {
 
             <Col md={4} className="project-card" as={motion.div} variants={item}>
               <ProjectCard
-                imgPath={suicide}
+                imgPath={cryptoImg}
                 isBlog={false}
                 title="CryptoPlace"
                 description="CryptoCoin is used to track real-time cryptocurrency prices and market trends, helping users make informed investment decisions."
